@@ -14,6 +14,8 @@ class AnimalTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        loadAnimals()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -26,23 +28,26 @@ class AnimalTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return animals.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return animals.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        let animalCellIdentifier = "animalButtonTableViewCell"
+        let infoCellIdentifier = "animalInfoTableViewCell"
+        
+        let cell1 = tableView.dequeueReusableCell(withIdentifier: animalCellIdentifier, for: indexPath) as? AnimalTableViewCell
+        let cell2 = tableView.dequeueReusableCell(withIdentifier: infoCellIdentifier, for: indexPath) as? AnimalTableViewCell
 
         // Configure the cell...
 
-        return cell
+        return cell1!
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -88,5 +93,20 @@ class AnimalTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    //MARK: Private Methods
+    
+    private func loadAnimals(){
+        
+        let thumbnail1 = UIImage(named:"arctic fox1")
+        let thumbnail2 = UIImage(named:"ermine1")
+        let thumbnail3 = UIImage(named:"ezo momonga1")
+        let thumbnail4 = UIImage(named:"red panda1")
+        
+        let arcticfox = Animal(name:"Arctic Fox", sciname:"Vulpes lagopus", cls:"Mammalia", size:"3.5kg")
+        let ermine = Animal(name:"Ermine", sciname:"Mustela erminea", cls:"Mammalia", size:"0.3kg")
+        let ezomomonga = Animal(name:"Ezo Momonga", sciname:"Pteromys volans", cls:"Mammalia", size:"0.22kg")
+        let redpanda = Animal(name:"Red Panda", sciname:"Ailurus fulgens", cls:"Mammalia", size:"5.0kg")
+        
+        animals += [arcticfox, ermine, ezomomonga, redpanda]
+    }
 }

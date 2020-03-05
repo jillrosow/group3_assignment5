@@ -23,7 +23,3 @@ class Animal{
     }
 }
 
-let arcticfox = Animal(name:"Arctic Fox", sciname:"Vulpes lagopus", cls:"Mammalia", size:"3.5kg")
-let ermine = Animal(name:"Ermine", sciname:"Mustela erminea", cls:"Mammalia", size:"0.3kg")
-let ezomomonga = Animal(name:"Ezo Momonga", sciname:"Pteromys volans", cls:"Mammalia", size:"0.22kg")
-let redpanda = Animal(name:"Red Panda", sciname:"Ailurus fulgens", cls:"Mammalia", size:"5.0kg")

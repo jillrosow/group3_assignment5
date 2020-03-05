@@ -9,7 +9,15 @@
 import UIKit
 
 class AnimalTableViewCell: UITableViewCell {
-
+    
+    //MARK: Properties
+    @IBOutlet weak var animalImageView: UIImageView!
+    @IBOutlet weak var animalNameLabel: UILabel!
+    
+    @IBOutlet weak var scientificNameLabel: UILabel!
+    @IBOutlet weak var classLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
