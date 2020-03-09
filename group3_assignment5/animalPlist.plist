@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>arctic fox1</key>
+			<string></string>
+			<key>nap time...</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>arctic fox2</key>
+			<string></string>
+			<key>eyes emoji</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>arctic fox3</key>
+			<string></string>
+			<key>summer bod</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>arctic fox4</key>
+			<string></string>
+			<key>having some fun</key>
+			<string></string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>ermine1</key>
+			<string></string>
+			<key>nap time...</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ermine2</key>
+			<string></string>
+			<key>summer boi</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ermine3</key>
+			<string></string>
+			<key>summer bod</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ermine4</key>
+			<string></string>
+			<key>having some fun</key>
+			<string></string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>ezo momonga1</key>
+			<string></string>
+			<key>nap time...</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ezo momonga2</key>
+			<string></string>
+			<key>eyes emoji</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ezo momonga3</key>
+			<string></string>
+			<key>summer bod</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ezo momonga4</key>
+			<string></string>
+			<key>having some fun</key>
+			<string></string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>red panda1</key>
+			<string></string>
+			<key>nap time...</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>red panda2</key>
+			<string></string>
+			<key>eyes emoji</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>red panda3</key>
+			<string></string>
+			<key>summer bod</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>red panda4</key>
+			<string></string>
+			<key>having some fun</key>
+			<string></string>
+		</dict>
+	</array>
+</array>
+</plist>

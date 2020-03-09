@@ -11,6 +11,7 @@ import UIKit
 class AnimalTableViewController: UITableViewController {
     
     var animals = [Animal]()
+    var thumbnails = [UIImage]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,7 @@ class AnimalTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return animals.count
+        return (animals.count) * 2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -41,12 +42,23 @@ class AnimalTableViewController: UITableViewController {
         let animalCellIdentifier = "animalButtonTableViewCell"
         let infoCellIdentifier = "animalInfoTableViewCell"
         
-        let cell1 = tableView.dequeueReusableCell(withIdentifier: animalCellIdentifier, for: indexPath) as? AnimalTableViewCell
-        let cell2 = tableView.dequeueReusableCell(withIdentifier: infoCellIdentifier, for: indexPath) as? AnimalTableViewCell
+        if (indexPath.row % 2 == 1){
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: infoCellIdentifier, for: indexPath) as? AnimalTableViewCell
 
-        // Configure the cell...
-
-        return cell1!
+            cell2!.scientificNameLabel.text = animals[indexPath.row/2].sciname
+            cell2!.classLabel.text = animals[indexPath.row/2].cls
+            cell2!.weightLabel.text = animals[indexPath.row/2].size
+            
+            return cell2!
+        }
+        else{
+            let cell1 = tableView.dequeueReusableCell(withIdentifier: animalCellIdentifier, for: indexPath) as? AnimalTableViewCell
+            
+            cell1!.animalImageView.image = thumbnails[indexPath.row/2]
+            cell1!.animalNameLabel.text = animals[indexPath.row/2].name
+            
+            return cell1!
+        }
     }
 
     /*
@@ -101,6 +113,8 @@ class AnimalTableViewController: UITableViewController {
         let thumbnail2 = UIImage(named:"ermine1")
         let thumbnail3 = UIImage(named:"ezo momonga1")
         let thumbnail4 = UIImage(named:"red panda1")
+        
+        thumbnails += [thumbnail1!, thumbnail2!, thumbnail3!, thumbnail4!]
         
         let arcticfox = Animal(name:"Arctic Fox", sciname:"Vulpes lagopus", cls:"Mammalia", size:"3.5kg")
         let ermine = Animal(name:"Ermine", sciname:"Mustela erminea", cls:"Mammalia", size:"0.3kg")
