@@ -2,109 +2,69 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<array>
-		<dict>
-			<key>arctic fox1</key>
-			<string></string>
-			<key>nap time...</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>arctic fox2</key>
-			<string></string>
-			<key>eyes emoji</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>arctic fox3</key>
-			<string></string>
-			<key>summer bod</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>arctic fox4</key>
-			<string></string>
-			<key>having some fun</key>
-			<string></string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>ermine1</key>
-			<string></string>
-			<key>peeking out</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ermine2</key>
-			<string></string>
-			<key>on the lookout!</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ermine3</key>
-			<string></string>
-			<key>a summer boy</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ermine4</key>
-			<string></string>
-			<key>blending in with the snow</key>
-			<string></string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>ezo momonga1</key>
-			<string></string>
-			<key>rotund</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ezo momonga2</key>
-			<string></string>
-			<key>cozy in the cold snow</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ezo momonga3</key>
-			<string></string>
-			<key>look! he is cute</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>ezo momonga4</key>
-			<string></string>
-			<key>some family time</key>
-			<string></string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>red panda1</key>
-			<string></string>
-			<key>all curled up</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>red panda2</key>
-			<string></string>
-			<key>feeling lazy...</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>red panda3</key>
-			<string></string>
-			<key>babies!!</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>red panda4</key>
-			<string></string>
-			<key>playing in the snow</key>
-			<string></string>
-		</dict>
-	</array>
+	<dict>
+		<key>arctic fox1</key>
+		<string>nap time</string>
+	</dict>
+	<dict>
+		<key>arctic fox2</key>
+		<string>eyes emoji</string>
+	</dict>
+	<dict>
+		<key>arctic fox3</key>
+		<string>summer bod</string>
+	</dict>
+	<dict>
+		<key>arctic fox4</key>
+		<string>having some fun</string>
+	</dict>
+	<dict>
+		<key>ermine1</key>
+		<string>peeking out</string>
+	</dict>
+	<dict>
+		<key>ermine2</key>
+		<string>on the lookout!</string>
+	</dict>
+	<dict>
+		<key>ermine3</key>
+		<string>a summer boy</string>
+	</dict>
+	<dict>
+		<key>ermine4</key>
+		<string>blending in with the snow</string>
+	</dict>
+	<dict>
+		<key>ezo momonga1</key>
+		<string>rotund</string>
+	</dict>
+	<dict>
+		<key>ezo momonga2</key>
+		<string>cozy in the cold snow</string>
+	</dict>
+	<dict>
+		<key>ezo momonga3</key>
+		<string>look! he is cute</string>
+	</dict>
+	<dict>
+		<key>ezo momonga4</key>
+		<string>some family time</string>
+	</dict>
+	<dict>
+		<key>red panda1</key>
+		<string>all curled up</string>
+	</dict>
+	<dict>
+		<key>red panda2</key>
+		<string>feelling lazy...</string>
+	</dict>
+	<dict>
+		<key>red panda3</key>
+		<string>babies!!</string>
+	</dict>
+	<dict>
+		<key>red panda4</key>
+		<string>playing in the snow</string>
+	</dict>
 </array>
 </plist>

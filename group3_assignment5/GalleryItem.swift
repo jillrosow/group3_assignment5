@@ -8,14 +8,14 @@
 
 import UIKit
 
-class galleryItem{
+class GalleryItem{
     
     //var header:String
     var caption:String
-    var photo:UIImage?
+    var photo:String
     //var footer:String
     
-    init?(caption:String, photo:UIImage?){
+    init(caption:String, photo:String){
         //self.header = header
         self.caption = caption
         self.photo = photo

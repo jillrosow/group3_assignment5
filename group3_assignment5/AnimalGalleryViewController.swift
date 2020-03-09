@@ -8,12 +8,29 @@
 
 import UIKit
 
-class AnimalGalleryViewController: UIViewController {
+class AnimalGalleryViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var galleryItem:galleryItem?
+    @IBOutlet weak var animalGalleryCollectionView: UICollectionView!
+    var items = [GalleryItem]()
+    let identifier = "AnimalGalleryCell"
+    
+    func collectionView(_ animalGalleryCollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        print("collection func")
+        let cell = animalGalleryCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! AnimalGalleryCollectionViewCell
+            
+        cell.animalGalleryLabel.text = items[indexPath.row].caption
+        cell.animalGalleryImageView.image = UIImage(named:items[indexPath.row].photo)
+        
+        return cell
+    }
+    
+    //var GalleryItem:galleryItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        accessAnimalPlist()
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -21,11 +38,32 @@ class AnimalGalleryViewController: UIViewController {
     private func accessAnimalPlist(){
         let inputFile = Bundle.main.path(forResource: "animalPlist", ofType: "plist")
         let inputDataArray = NSArray(contentsOfFile: inputFile!)
-        let nestedArrays = 
-        for input in inputDataArray as![Array<Dictionary<String, String>>]{
-            
+        for input in inputDataArray as![Dictionary<String, String>]{
+            for (key, value) in input{
+                items.append(GalleryItem(caption: value, photo: key))
+            }
         }
     }
+    
+    //MARK: UICollectionViewDataSource
+    func numberOfSections(in animalGalleryCollectionView: UICollectionView) -> Int {
+        1
+    }
+    
+    func collectionView(_ animalGalleryCollectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    /*func collectionVIew(_ animalGalleryCollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+        let cell = animalGalleryCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! AnimalGalleryCollectionViewCell
+            
+        cell.animalGalleryLabel.text = items[indexPath.row].caption
+        cell.animalGalleryImageView.image = UIImage(named:items[indexPath.row].photo)
+        
+        return cell
+    }*/
 
     /*
     // MARK: - Navigation
