@@ -6,5 +6,19 @@
 //  Copyright © 2020 Jill Rosow. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
+class galleryItem{
+    
+    //var header:String
+    var caption:String
+    var photo:UIImage?
+    //var footer:String
+    
+    init?(caption:String, photo:UIImage?){
+        //self.header = header
+        self.caption = caption
+        self.photo = photo
+        //self.footer = footer
+    }
+}

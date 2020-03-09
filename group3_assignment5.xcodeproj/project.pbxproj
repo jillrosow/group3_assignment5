@@ -18,6 +18,8 @@
 		68D298762410566F0083B7CA /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D298752410566F0083B7CA /* AnimalTableViewCell.swift */; };
 		68D298832416D3510083B7CA /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D298822416D3510083B7CA /* GalleryItem.swift */; };
 		68D298852416D7E50083B7CA /* animalPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D298842416D7E50083B7CA /* animalPlist.plist */; };
+		68D298892416E7090083B7CA /* AnimalGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D298882416E7090083B7CA /* AnimalGalleryViewController.swift */; };
+		68D2988B2416E9FB0083B7CA /* AnimalGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2988A2416E9FB0083B7CA /* AnimalGalleryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		68D298752410566F0083B7CA /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 		68D298822416D3510083B7CA /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
 		68D298842416D7E50083B7CA /* animalPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = animalPlist.plist; sourceTree = "<group>"; };
+		68D298882416E7090083B7CA /* AnimalGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGalleryViewController.swift; sourceTree = "<group>"; };
+		68D2988A2416E9FB0083B7CA /* AnimalGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +72,13 @@
 			children = (
 				4EC036C9240D93730029CDD1 /* AppDelegate.swift */,
 				4EC036CB240D93730029CDD1 /* SceneDelegate.swift */,
-				4EC036CD240D93730029CDD1 /* ViewController.swift */,
 				4EC036CF240D93730029CDD1 /* Main.storyboard */,
+				4EC036CD240D93730029CDD1 /* ViewController.swift */,
+				68D298882416E7090083B7CA /* AnimalGalleryViewController.swift */,
+				68D2988A2416E9FB0083B7CA /* AnimalGalleryCollectionViewCell.swift */,
+				68D298732410556A0083B7CA /* AnimalTableViewController.swift */,
 				68D298752410566F0083B7CA /* AnimalTableViewCell.swift */,
 				68D2987124104E800083B7CA /* Animal.swift */,
-				68D298732410556A0083B7CA /* AnimalTableViewController.swift */,
 				68D298822416D3510083B7CA /* GalleryItem.swift */,
 				4EC036D2240D93750029CDD1 /* Assets.xcassets */,
 				4EC036D4240D93750029CDD1 /* LaunchScreen.storyboard */,
@@ -155,12 +161,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EC036CE240D93730029CDD1 /* ViewController.swift in Sources */,
+				68D2988B2416E9FB0083B7CA /* AnimalGalleryCollectionViewCell.swift in Sources */,
 				68D298742410556A0083B7CA /* AnimalTableViewController.swift in Sources */,
 				68D298832416D3510083B7CA /* GalleryItem.swift in Sources */,
 				68D2987224104E800083B7CA /* Animal.swift in Sources */,
 				68D298762410566F0083B7CA /* AnimalTableViewCell.swift in Sources */,
 				4EC036CA240D93730029CDD1 /* AppDelegate.swift in Sources */,
 				4EC036CC240D93730029CDD1 /* SceneDelegate.swift in Sources */,
+				68D298892416E7090083B7CA /* AnimalGalleryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
