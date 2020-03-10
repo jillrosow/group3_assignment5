@@ -177,21 +177,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6w-9z-u6l">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6w-9z-u6l">
                                                     <rect key="frame" x="23" y="8" width="255" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8u-z7-eHD">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P8u-z7-eHD">
                                                     <rect key="frame" x="23" y="37" width="255" height="255"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n6w-9z-u6l" firstAttribute="leading" secondItem="1G0-CL-sqY" secondAttribute="leading" constant="23" id="Ihm-fI-k68"/>
+                                                <constraint firstItem="n6w-9z-u6l" firstAttribute="top" secondItem="1G0-CL-sqY" secondAttribute="top" constant="8" id="Qaz-lC-9gg"/>
+                                                <constraint firstAttribute="trailing" secondItem="n6w-9z-u6l" secondAttribute="trailing" constant="22" id="UGm-qN-xHI"/>
+                                                <constraint firstAttribute="trailing" secondItem="P8u-z7-eHD" secondAttribute="trailing" constant="22" id="bZm-3P-Mxv"/>
+                                                <constraint firstItem="P8u-z7-eHD" firstAttribute="leading" secondItem="1G0-CL-sqY" secondAttribute="leading" constant="23" id="kUn-Dy-AEB"/>
+                                                <constraint firstItem="P8u-z7-eHD" firstAttribute="top" secondItem="n6w-9z-u6l" secondAttribute="bottom" constant="8" id="r3F-GR-RWu"/>
+                                                <constraint firstItem="P8u-z7-eHD" firstAttribute="top" secondItem="n6w-9z-u6l" secondAttribute="bottom" constant="8" id="rSL-Y4-t4n"/>
+                                                <constraint firstAttribute="bottom" secondItem="P8u-z7-eHD" secondAttribute="bottom" constant="8" id="tox-Aq-0fU"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <size key="customSize" width="300" height="300"/>
                                         <connections>
                                             <outlet property="animalGalleryImageView" destination="P8u-z7-eHD" id="KhZ-P6-pOs"/>
                                             <outlet property="animalGalleryLabel" destination="n6w-9z-u6l" id="VCo-nX-vZR"/>
@@ -206,6 +214,10 @@
                                     <rect key="frame" x="0.0" y="350" width="374" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="dUF-cn-R5k" id="adN-IW-KAh"/>
+                                    <outlet property="delegate" destination="dUF-cn-R5k" id="rmu-mO-Wj0"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
