@@ -11,6 +11,7 @@ import UIKit
 class AnimalGalleryViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var animalGalleryCollectionView: UICollectionView!
+    
     var items = [GalleryItem]()
     let identifier = "AnimalGalleryCell"
     
@@ -18,10 +19,8 @@ class AnimalGalleryViewController: UIViewController, UICollectionViewDataSource,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         accessAnimalPlist()
-        print("at least there's this")
-        
-        
         
         // Do any additional setup after loading the view.
     }
@@ -47,6 +46,9 @@ class AnimalGalleryViewController: UIViewController, UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        //headerLabel.text = "a"
+        //footerLabel.text = "q"
 
         let cell = animalGalleryCollectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! AnimalGalleryCollectionViewCell
             
@@ -55,7 +57,6 @@ class AnimalGalleryViewController: UIViewController, UICollectionViewDataSource,
         
         return cell
     }
-
     
     /*func collectionVIew(_ animalGalleryCollectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
